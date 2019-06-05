@@ -8,7 +8,8 @@ class helloWorld extends React.Component {
         super(props)
         state = {
             name: "",
-            greet: "Hello World"
+            greet: "Hello World",
+            todoList: ["first", "second", "third"]
         }
 
 
@@ -19,6 +20,11 @@ class helloWorld extends React.Component {
         return(
             <div className="hello-world-div">
                 <h1>{this.state.greet}</h1>
+
+
+                {this.state.todoList.map (item => (
+                    <h3>item</h3>
+                ))}
 
             
             </div>
