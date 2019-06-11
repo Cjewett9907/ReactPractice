@@ -29,7 +29,7 @@ class helloWorld extends React.Component {
     }
 
     updateUserName = (n) => {
-        this.setState({ name: name });
+        this.setState({ name: n });
       };
 
     clearText = () => {
@@ -41,18 +41,13 @@ class helloWorld extends React.Component {
         return(
             <div className="hello-world-div">
                 <h1>{this.state.greet}</h1>
-
                 <WelcomeUser name={this.state.name}
                      updateUserName={this.updateUserName} />
                     <button type='button' onClick={this.clearText}>Clear</button>
                 <br />
-
-
                 {this.state.todoList.map (item => (
                     <h3>item</h3>
-                ))}
-
-            
+                ))}   
             </div>
         );
     }
