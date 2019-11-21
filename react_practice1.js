@@ -16,8 +16,6 @@ class WelcomeUser extends React.Component {
     }
   }
 
-
-
 class helloWorld extends React.Component {
     constructor(props){
         super(props)
@@ -35,7 +33,6 @@ class helloWorld extends React.Component {
     clearText = () => {
         this.setState({ name: "" })
       };
-
 
     render(){
         return(
