@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react'
-// import other necessary resources
+
 
 class WelcomeUser extends React.Component {
     handleNameChange = (e) => {
